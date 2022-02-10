@@ -24,7 +24,7 @@ def fetch_menu(day: int):
     save = False
     for e in elements:
         if e.find("strong"):
-            save = e.get_text() == WEEKDAYS[day]
+            save = e.get_text().rstrip() == WEEKDAYS[day]
             continue
 
         if save:
