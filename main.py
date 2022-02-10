@@ -48,3 +48,6 @@ def main():
     r = flask.make_response(json_str)
     r.mimetype = "application/json"
     return r
+
+if __name__ == '__main__':
+    app.run(debug=True)
